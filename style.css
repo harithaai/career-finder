@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  background-color: #6999bc;   /* LIGHT BLUE */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.hide {
+  display: none;
+}
+
+.btn-grid {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+#other-input input {
+  padding: 8px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* === AI Chat Styles === */
+#ai-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #0f62fe;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  z-index: 9999;
+}
+
+#ai-chatbox {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 9998;
+}
+
+#ai-chatbox.hidden {
+  display: none;
+}
+
+#ai-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.ai-input-area {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  background: #222;
+}
+
+#ai-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+#ai-send,
+#ai-voice {
+  padding: 8px 10px;
+  background: #0f62fe;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#ai-send:hover,
+#ai-voice:hover {
+  background: #0353e9;
+}
+
+#title {
+  font-size: 46px;   /* Career Finder size */
+  font-weight: 700;
+  color: #0a2a43;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Career Finder</h1>
+    <button id="start-btn">Start</button>
+
+    <div id="question-container" class="hide">
+      <h2 id="question"></h2>
+      <div id="options"></div>
+      <button id="next-btn" class="hide">Next</button> 
+      <button id="submit-btn" class="hide">Submit</button>
+    </div>
+
+    <div id="result-container" class="hide">
+      <h2 id="result"></h2>
+    </div>
+  </div>
+
+  <!-- AI Chat + Voice -->
+  <div id="ai-container">
+    <button id="ai-toggle">🤖</button>
+    <div id="ai-box" class="hide">
+      <div id="ai-chat"></div>
+      <input type="text" id="ai-input" placeholder="Ask me something...">
+      <button id="ai-send">Send</button>
+      <button id="ai-voice">🎤</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
